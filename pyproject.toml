@@ -9,3 +9,14 @@ license = {file = "LICENSE.txt"}
 name = "mypackage"
 version = "0.1.0"
 description = "My first package"
+
+[project.optional-dependencies]
+dev = [
+  "bumpver",
+  "pytest",
+  "pytest-cov",
+]
+docs = [
+  "sphinx",
+  "sphinx-rtd-theme",
+]
